@@ -6,9 +6,8 @@ import { FaCaretRight } from "react-icons/fa";
 const About = () => {
     return (
         <div className="py-20">
-            <h4 className="text-primary text-2xl font-medium flex gap-4 after:content-[''] after:w-[300px] after:h-px after:bg-secondary after:bg-opacity-20 items-center">
-                <FaCaretRight />{" "}
-                <span className="text-secondary">About Me</span>
+            <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:w-[300px] after:h-px after:bg-secondary after:bg-opacity-20 items-center">
+                About Me
             </h4>
             <div className="flex gap-8 mt-8 justify-between">
                 <div className="w-2/3 tracking-wide text-accent grid gap-6">

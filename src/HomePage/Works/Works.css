@@ -1,3 +1,6 @@
+.work-img-bar::-webkit-scrollbar {
+    display: none;
+}
 .work-img {
     position: relative;
 }
