@@ -1,0 +1,12 @@
+.navbar ul li a {
+    font-family: "Roboto Slab", serif;
+    transition: all 0.3s linear;
+}
+
+.navbar ul li a:focus {
+    background-color: transparent;
+}
+
+.navbar ul li a:hover {
+    background-color: transparent;
+}

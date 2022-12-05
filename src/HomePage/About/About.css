@@ -1,0 +1,35 @@
+.about-img {
+    position: relative;
+}
+.about-img::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(100, 255, 218, 0.5);
+    border-radius: 4px;
+    transition: all 0.2s linear;
+}
+.about-img:hover::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(100, 255, 218, 0);
+    border-radius: 4px;
+}
+.about-img .overlay {
+    position: absolute;
+    border: 3px #64ffda solid;
+    border-radius: 4px;
+    top: 20px;
+    left: 20px;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+    transition: all 0.2s linear;
+}
+.about-img:hover .overlay {
+    top: 10px;
+    left: 10px;
+    bottom: -10px;
+    right: -10px;
+}
