@@ -67,6 +67,7 @@ const Works = () => {
                                 </a>
                                 <a
                                     href={work.live}
+                                    target="blank"
                                     className="hover:text-primary"
                                 >
                                     <FiExternalLink />

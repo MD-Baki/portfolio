@@ -7,7 +7,7 @@ const Contact = () => {
                 style={{ fontFamily: "Roboto Slab" }}
                 className="text-sm tracking-wide text-primary pb-4"
             >
-                04. What’s Next?
+                What’s Next?
             </h4>
             <h2 className="font-bold text-6xl">Get In Touch</h2>
             <p className="w-1/2 mx-auto text-accent py-5">

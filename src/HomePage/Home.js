@@ -4,6 +4,7 @@ import { FiGithub, FiLinkedin, FiTwitter, FiFacebook } from "react-icons/fi";
 import About from "./About/About";
 import Works from "./Works/Works";
 import Contact from "./Contact/Contact";
+import Project from "./Project/Project";
 const Home = () => {
     return (
         <div className="px-[50px] relative">
@@ -11,6 +12,7 @@ const Home = () => {
                 <Intro />
                 <About />
                 <Works />
+                <Project />
                 <Contact />
             </div>
             <div className="fixed top-1/2 right-[50px] -translate-y-1/2">
