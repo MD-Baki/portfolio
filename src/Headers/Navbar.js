@@ -5,8 +5,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
     return (
-        <header className="fixed w-full z-50 bg-[#0a192f]">
-            <div className="navbar px-[50px] py-5">
+        <header className="fixed w-full z-50 bg-[#000a1f] border-b-2 border-primary border-opacity-20">
+            <div className="navbar max-w-[1400px] mx-auto py-4">
                 <div className="flex-1">
                     <Link>
                         <img src={logo} alt="" className="h-14" />
@@ -21,7 +21,7 @@ const Navbar = () => {
                         </li>
                         <li>
                             <Link className="text-secondary hover:text-primary text-sm flex gap-1 items-center">
-                                Experience
+                                Project
                             </Link>
                         </li>
                         <li>
@@ -35,7 +35,7 @@ const Navbar = () => {
                             </Link>
                         </li>
                     </ul>
-                    <button className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize">
+                    <button className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize ml-3">
                         Resume
                     </button>
                 </div>
