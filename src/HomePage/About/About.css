@@ -4,21 +4,25 @@
 .about-img::after {
     position: absolute;
     content: "";
-    inset: 0;
-    background-color: rgba(100, 255, 218, 0.5);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 199, 255, 0.5);
     border-radius: 4px;
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
 }
 .about-img:hover::after {
     position: absolute;
     content: "";
-    inset: 0;
-    background-color: rgba(100, 255, 218, 0);
+    height: 0;
+    width: 0;
     border-radius: 4px;
 }
 .about-img .overlay {
     position: absolute;
-    border: 3px #64ffda solid;
+    border: 3px rgb(0, 199, 255) solid;
     border-radius: 4px;
     top: 20px;
     left: 20px;
@@ -30,6 +34,6 @@
 .about-img:hover .overlay {
     top: 10px;
     left: 10px;
-    bottom: -10px;
-    right: -10px;
+    bottom: -12px;
+    right: -12px;
 }

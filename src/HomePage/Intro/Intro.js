@@ -5,7 +5,7 @@ import { SlSocialBehance } from "react-icons/sl";
 const Intro = () => {
     return (
         <div className="relative max-w-[1400px] mx-auto">
-            <div className="max-w-[1100px] mx-auto py-44">
+            <div className="max-w-[1100px] mx-auto py-48">
                 <div>
                     <h4 className="text-primary font-medium text-lg">
                         Hi, my name is

@@ -5,8 +5,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
     return (
-        <header className="fixed w-full z-50 bg-[#000a1f] border-b-2 border-primary border-opacity-20">
-            <div className="navbar max-w-[1400px] mx-auto py-4">
+        <header className="max-w-[1100px] mx-auto">
+            <div className="navbar py-4">
                 <div className="flex-1">
                     <Link>
                         <img src={logo} alt="" className="h-14" />

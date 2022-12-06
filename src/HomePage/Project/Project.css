@@ -1,0 +1,9 @@
+.items {
+    margin: 0;
+    transition: all 0.2s linear;
+}
+
+.items:hover {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

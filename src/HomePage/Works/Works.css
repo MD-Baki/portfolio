@@ -1,26 +1,29 @@
-.work-img-bar::-webkit-scrollbar {
-    display: none;
-}
-.work-img {
+.project-container {
     position: relative;
+    transition: all 0.3s linear;
 }
-.work-img::after {
+
+.project-container::before {
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(100, 255, 218, 0.5);
-    border-radius: 4px;
-    transition: all 0.3s linear;
+    background-color: rgba(0, 49, 63, 0.5);
+    height: 0;
+    width: 100%;
+    transition: all 0.4s linear;
 }
-.work-img:hover::after {
-    top: 0;
-    left: 0;
-    right: 100%;
-    bottom: 0;
+
+.project-container:hover::before {
+    height: 100%;
 }
-.tec {
-    word-spacing: 24px;
+
+.project-container .overlay {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    transition: all 0.4s linear;
+}
+
+.project-container:hover .overlay {
+    bottom: 0;
 }
