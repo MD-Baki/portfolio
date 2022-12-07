@@ -73,18 +73,17 @@ const About = () => {
                 </div>
                 <div className="lg:w-[65%] tracking-wide text-accent grid gap-5 text-center lg:text-left">
                     <p>
-                        Hello, I am MD Abdulla Hale Baki, I am a Frontend
-                        Developer(ReactJS) with 1+ years of experience in Web
-                        Development. I have worked on multiple projects in the
-                        past, ranging from small to large scale. I am passionate
-                        about building scalable, maintainable, and secure web
-                        applications.
+                        Hello! My name is MD Abdulla Hale Baki and I enjoy
+                        creating things on the internet. I have a lot of
+                        interest in web development. I have HTML, CSS,
+                        JavaScript, React JS, JQuery, and Responsive Web Design
+                        skills. I am working day by day to improve my skills in
+                        web Development.
                     </p>
                     <p>
                         My Designing Skill in Figma, HTML5, CSS3, JavaScript &
                         React with Bootstrap and Tailwind CSS. and My
-                        Development Skill NodeJs, ExpressJs, Basic PHP and
-                        WordPress
+                        Development Skill ExpressJs, MongoDB.
                     </p>
                     <p>
                         Here are a few technologies I’ve been working with

@@ -18,20 +18,19 @@ const Intro = () => {
                         Front-End Developer.
                     </h2>
                     <p className="md:w-[50%] text-accent text-sm md:text-md py-2 md:py-6 lg:py-10">
-                        I am a passionate web developer and am always eager to
-                        learn different technologies related to{" "}
-                        <span className="text-primary">web development</span>. I
-                        love to take on challenges and always try to fulfill my
-                        responsibilities.
+                        I like to know and understand modern technology. Since
+                        then I have been working on improving my skills in web
+                        Development. When I start any work, I finish it with
+                        dedication.
                     </p>
-                    <button className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0">
-                        <a
-                            target="blank"
-                            href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
-                        >
-                            Check out my Resume!
-                        </a>
-                    </button>
+
+                    <a
+                        target="blank"
+                        href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
+                        className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0"
+                    >
+                        Check out my Resume!
+                    </a>
                 </div>
             </div>
             <div className="absolute top-1/2 right-0 -translate-y-1/2 lg:pr-5 xl:pr-0">

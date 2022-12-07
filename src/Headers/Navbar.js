@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logo.png";
 import "./Navbar.css";
+import { FiGithub } from "react-icons/fi";
 
 const Navbar = () => {
     return (
@@ -47,14 +48,15 @@ const Navbar = () => {
                             </a>
                         </li>
                     </ul>
-                    <button className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize ml-3">
-                        <a
-                            target="blank"
-                            href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
-                        >
-                            Resume
-                        </a>
-                    </button>
+
+                    <a
+                        target="blank"
+                        href="https://github.com/MD-Baki"
+                        className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize ml-3 gap-2 tracking-wide"
+                    >
+                        <FiGithub />
+                        GitHub
+                    </a>
                 </div>
             </div>
         </header>
