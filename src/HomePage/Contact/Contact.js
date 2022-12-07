@@ -123,7 +123,7 @@ const Contact = () => {
                         </div>
                         <div className="form-control w-full col-span-2">
                             <label className="label text-sm font-bold text-secondary">
-                                Your Message
+                                Message
                             </label>
                             <textarea
                                 name="comment"
@@ -133,7 +133,7 @@ const Contact = () => {
                             ></textarea>
                             <input
                                 type="submit"
-                                value="Drop Message"
+                                value="Send Message"
                                 className="col-span-2 mt-10 w-1/2 mx-auto btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize"
                             />
                         </div>
