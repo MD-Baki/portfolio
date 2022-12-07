@@ -61,7 +61,7 @@ const Project = () => {
     ];
 
     return (
-        <div className="py-20">
+        <div id="work" className="py-20">
             <div className="text-center">
                 <h3 className="text-3xl capitalize font-bold text-secondary">
                     Other Noteworthy Projects
@@ -70,7 +70,7 @@ const Project = () => {
                     view the archive
                 </h4>
             </div>
-            <div className="grid grid-cols-3 gap-5 pt-14">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 pt-14">
                 {projects.map((project) => (
                     <div
                         key={project._id}

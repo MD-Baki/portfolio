@@ -4,33 +4,38 @@ import { SlSocialBehance } from "react-icons/sl";
 
 const Intro = () => {
     return (
-        <div className="relative max-w-[1400px] mx-auto">
-            <div className="max-w-[1100px] mx-auto py-48">
+        <div className="relative">
+            <div className="max-w-[1100px] mx-auto py-20  md:py-48 text-center md:text-left">
                 <div>
-                    <h4 className="text-primary font-medium text-lg">
+                    <h4 className="text-primary font-medium text-sm md:text-lg">
                         Hi, my name is
                     </h4>
-                    <h1 className="text-[70px] text-secondary font-bold">
+                    <h1 className="text-[30px] md:text-[55px] lg:text-[70px] text-secondary font-bold">
                         MD Abdulla Hale{" "}
                         <span className="text-primary">Baki</span>.
                     </h1>
-                    <h2 className="text-[50px] text-secondary opacity-80 font-bold leading-[40px]">
+                    <h2 className="text-[22px] md:text-[40px] lg:text-[50px] text-secondary opacity-80 font-bold md:leading-[40px]">
                         Front-End Developer.
                     </h2>
-                    <p className="w-[50%] text-accent py-10">
+                    <p className="md:w-[50%] text-accent text-sm md:text-md py-2 md:py-6 lg:py-10">
                         I am a passionate web developer and am always eager to
                         learn different technologies related to{" "}
                         <span className="text-primary">web development</span>. I
                         love to take on challenges and always try to fulfill my
                         responsibilities.
                     </p>
-                    <button className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8">
-                        Check out my Resume!
+                    <button className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0">
+                        <a
+                            target="blank"
+                            href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
+                        >
+                            Check out my Resume!
+                        </a>
                     </button>
                 </div>
             </div>
-            <div className="absolute top-1/2 right-0 -translate-y-1/2">
-                <div className="flex flex-col gap-6 text-xl">
+            <div className="absolute top-1/2 right-0 -translate-y-1/2 lg:pr-5 xl:pr-0">
+                <div className="hidden md:flex flex-col gap-6 text-xl">
                     <a
                         target="blank"
                         href="https://github.com/MD-Baki"

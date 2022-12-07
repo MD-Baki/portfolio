@@ -39,11 +39,12 @@ const Works = () => {
     ];
 
     return (
-        <div className="py-20">
-            <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:w-[300px] after:h-[2px] after:bg-primary items-center">
-                Here are my favorite projects.
+        <div id="project" className="py-20">
+            <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:md:w-[300px] after:w-[40%] after:h-[2px] after:bg-primary items-center">
+                <span className="hidden md:flex -mr-2">Here are my</span>{" "}
+                favorite projects.
             </h4>
-            <div className="grid grid-cols-2 gap-8 mt-10">
+            <div className="grid lg:grid-cols-2 gap-8 mt-10">
                 {projects.map((project) => (
                     <div key={project._id}>
                         <div className="project-container border border-accent rounded-md hover:border-primary overflow-hidden">
@@ -77,7 +78,7 @@ const Works = () => {
                                 <h5 className="py-2">
                                     {project.intro.slice(0, 70) + "..."}
                                 </h5>
-                                <div className="flex flex-wrap gap-2 mb-2 mt-1">
+                                <div className="hidden md:flex flex-wrap gap-2 mb-2 mt-1">
                                     {project.technology.map((data, i) => (
                                         <p
                                             key={i}

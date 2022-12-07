@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
     return (
-        <header className="max-w-[1100px] mx-auto">
+        <header className="max-w-[1100px] mx-auto px-5 lg:px-0">
             <div className="navbar py-4">
                 <div className="flex-1">
                     <Link>
@@ -13,30 +13,47 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal p-0">
+                    <ul className="menu menu-horizontal p-0 hidden md:flex">
                         <li>
-                            <Link className="text-secondary hover:text-primary text-sm flex gap-1 items-center">
+                            <a
+                                href="#about"
+                                className="text-secondary hover:text-primary text-sm flex gap-1 items-center"
+                            >
                                 About
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link className="text-secondary hover:text-primary text-sm flex gap-1 items-center">
+                            <a
+                                href="#project"
+                                className="text-secondary hover:text-primary text-sm flex gap-1 items-center"
+                            >
                                 Project
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link className="text-secondary hover:text-primary text-sm flex gap-1 items-center">
+                            <a
+                                href="#work"
+                                className="text-secondary hover:text-primary text-sm flex gap-1 items-center"
+                            >
                                 Work
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link className="text-secondary hover:text-primary text-sm flex gap-1 items-center">
+                            <a
+                                href="#contact"
+                                className="text-secondary hover:text-primary text-sm flex gap-1 items-center"
+                            >
                                 Contact
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <button className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize ml-3">
-                        Resume
+                        <a
+                            target="blank"
+                            href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
+                        >
+                            Resume
+                        </a>
                     </button>
                 </div>
             </div>

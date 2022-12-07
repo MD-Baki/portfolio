@@ -56,12 +56,22 @@ const About = () => {
         },
     ];
     return (
-        <div className="py-20">
-            <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:w-[300px] after:h-[2px] after:bg-primary items-center">
+        <div id="about" className="py-20">
+            <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:md:w-[300px] after:w-[60%] after:h-[2px] after:bg-primary items-center">
                 About Me
             </h4>
-            <div className="flex gap-8 mt-8 justify-between">
-                <div className="w-[65%] tracking-wide text-accent grid gap-5">
+            <div className="flex flex-col lg:flex-row-reverse gap-8 mt-8 justify-between">
+                <div className="lg:w-[35%] text-center lg:text-right pb-7">
+                    <div className="about-img inline-block">
+                        <img
+                            src={me}
+                            alt=""
+                            className="h-[300px] w-[300px] rounded"
+                        />
+                        <div className="overlay border-primary"></div>
+                    </div>
+                </div>
+                <div className="lg:w-[65%] tracking-wide text-accent grid gap-5 text-center lg:text-left">
                     <p>
                         Hello, I am MD Abdulla Hale Baki, I am a Frontend
                         Developer(ReactJS) with 1+ years of experience in Web
@@ -80,7 +90,7 @@ const About = () => {
                         Here are a few technologies I’ve been working with
                         recently:
                     </p>
-                    <div className="grid grid-cols-5 gap-x-4 gap-y-6 w-[65%]  mt-4">
+                    <div className="grid grid-cols-4 md:grid-cols-5 gap-x-4 gap-y-6 md:w-[65%]  mt-4 mx-auto lg:mx-0">
                         {skills.map((skill, i) => (
                             <div key={i} className="text-center">
                                 <img
@@ -93,16 +103,6 @@ const About = () => {
                                 </p>
                             </div>
                         ))}
-                    </div>
-                </div>
-                <div className="w-[35%] text-right">
-                    <div className="about-img inline-block">
-                        <img
-                            src={me}
-                            alt=""
-                            className="h-[300px] w-[300px] rounded"
-                        />
-                        <div className="overlay border-primary"></div>
                     </div>
                 </div>
             </div>

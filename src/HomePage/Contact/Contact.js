@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             <div className="divider m-0 mt-3"></div>
-            <div className="py-20 text-center">
+            <div id="contact" className="py-20 text-center">
                 <h2 className="font-bold text-4xl text-secondary">
                     Interested in Working Together?
                 </h2>

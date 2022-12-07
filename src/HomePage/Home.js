@@ -7,15 +7,17 @@ import Contact from "./Contact/Contact";
 import Project from "./Project/Project";
 const Home = () => {
     return (
-        <div className="px-[50px]">
-            <Intro />
-            <div className="max-w-[1100px] mx-auto">
+        <>
+            <div className="max-w-[1400px] mx-auto px-5 lg:px-0">
+                <Intro />
+            </div>
+            <div className="max-w-[1100px] mx-auto px-5 lg:px-0">
                 <About />
                 <Works />
                 <Project />
                 <Contact />
             </div>
-        </div>
+        </>
     );
 };
 
