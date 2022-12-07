@@ -1,11 +1,5 @@
 import React from "react";
-import {
-    FiPhone,
-    FiMessageSquare,
-    FiGithub,
-    FiLinkedin,
-    FiFacebook,
-} from "react-icons/fi";
+import { FiPhone, FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
 import { SlSocialBehance } from "react-icons/sl";
 import { MdAlternateEmail } from "react-icons/md";
 import { toast } from "react-toastify";
@@ -41,7 +35,7 @@ const Contact = () => {
                     Get in Touch
                 </h2>
                 <div className="grid lg:grid-cols-2 gap-8">
-                    <div>
+                    <div data-aos="fade-down" data-aos-duration="1500">
                         <p className="text-accent pb-8">
                             I’m interested in freelance opportunities –
                             especially ambitious or large projects. However, if
@@ -95,6 +89,8 @@ const Contact = () => {
 
                     <form
                         onSubmit={handleMessage}
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
                         className="grid grid-cols-2 gap-x-16 gap-y-10"
                     >
                         <div className="form-control w-full">

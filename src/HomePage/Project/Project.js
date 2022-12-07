@@ -73,42 +73,49 @@ const Project = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 pt-14">
                 {projects.map((project) => (
                     <div
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1500"
                         key={project._id}
-                        className="bg-neutral p-10 rounded items"
                     >
-                        <div className="mb-8 flex justify-between items-center">
-                            <button className="text-4xl text-primary">
-                                <FiFolder />
-                            </button>
-                            <div className="flex gap-4 items-center text-xl">
-                                <a
-                                    href={project.git}
-                                    target="blank"
-                                    className="hover:text-primary"
-                                >
-                                    <FiGithub />
-                                </a>
-                                <a
-                                    href={project.live}
-                                    className="hover:text-primary"
-                                >
-                                    <FiExternalLink />
-                                </a>
+                        <div className="item-container bg-neutral p-10 rounded">
+                            <div className="mb-8 flex justify-between items-center">
+                                <button className="text-4xl text-primary">
+                                    <FiFolder />
+                                </button>
+                                <div className="flex gap-4 items-center text-xl">
+                                    <a
+                                        href={project.git}
+                                        target="blank"
+                                        className="hover:text-primary"
+                                    >
+                                        <FiGithub />
+                                    </a>
+                                    <a
+                                        href={project.live}
+                                        className="hover:text-primary"
+                                    >
+                                        <FiExternalLink />
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold text-secondary">
-                                {project.title}
-                            </h3>
-                            <p className="text-accent text-sm py-3">
-                                {project.details.slice(0, 100) + "..."}
-                            </p>
-                            <div className="flex flex-wrap gap-4">
-                                {project.technology.map((data, i) => (
-                                    <p key={i} className="text-xs font-medium">
-                                        {data}
-                                    </p>
-                                ))}
+                            <div>
+                                <h3 className="text-xl font-bold text-secondary">
+                                    {project.title}
+                                </h3>
+                                <p className="text-accent text-sm py-3">
+                                    {project.details.slice(0, 100) + "..."}
+                                </p>
+                                <div className="flex flex-wrap gap-4">
+                                    {project.technology.map((data, i) => (
+                                        <p
+                                            key={i}
+                                            className="text-xs font-medium"
+                                        >
+                                            {data}
+                                        </p>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

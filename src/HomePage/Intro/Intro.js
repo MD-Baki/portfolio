@@ -6,7 +6,7 @@ const Intro = () => {
     return (
         <div className="relative">
             <div className="max-w-[1100px] mx-auto py-20  md:py-48 text-center md:text-left">
-                <div>
+                <div data-aos="zoom-in-down" data-aos-duration="3000">
                     <h4 className="text-primary font-medium text-sm md:text-lg">
                         Hi, my name is
                     </h4>

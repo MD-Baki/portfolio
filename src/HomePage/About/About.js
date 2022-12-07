@@ -56,13 +56,17 @@ const About = () => {
         },
     ];
     return (
-        <div id="about" className="py-20">
+        <div id="about" className="py-24">
             <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:md:w-[300px] after:w-[60%] after:h-[2px] after:bg-primary items-center">
                 About Me
             </h4>
             <div className="flex flex-col lg:flex-row-reverse gap-8 mt-8 justify-between">
                 <div className="lg:w-[35%] text-center lg:text-right pb-7">
-                    <div className="about-img inline-block">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="1500"
+                        className="about-img inline-block"
+                    >
                         <img
                             src={me}
                             alt=""
@@ -71,7 +75,11 @@ const About = () => {
                         <div className="overlay border-primary"></div>
                     </div>
                 </div>
-                <div className="lg:w-[65%] tracking-wide text-accent grid gap-5 text-center lg:text-left">
+                <div
+                    data-aos="zoom-out-right"
+                    data-aos-duration="1500"
+                    className="lg:w-[65%] tracking-wide text-accent grid gap-5 text-center lg:text-left"
+                >
                     <p>
                         Hello! My name is MD Abdulla Hale Baki and I enjoy
                         creating things on the internet. I have a lot of

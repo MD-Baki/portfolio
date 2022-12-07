@@ -9,6 +9,7 @@ const Works = () => {
         {
             _id: 1,
             image: work1,
+            aos: "fade-right",
             title: "Creative Photo",
             intro: "photographer services review photographer services review photographer services review photographer services review",
             technology: [
@@ -24,6 +25,7 @@ const Works = () => {
         {
             _id: 2,
             image: work2,
+            aos: "fade-left",
             title: "Dream Phone",
             intro: "photographer services review photographer services review photographer services review photographer services review",
             technology: [
@@ -46,7 +48,11 @@ const Works = () => {
             </h4>
             <div className="grid lg:grid-cols-2 gap-8 mt-10">
                 {projects.map((project) => (
-                    <div key={project._id}>
+                    <div
+                        data-aos={project.aos}
+                        data-aos-duration="1500"
+                        key={project._id}
+                    >
                         <div className="project-container border border-accent rounded-md hover:border-primary overflow-hidden">
                             <img
                                 src={project.image}
