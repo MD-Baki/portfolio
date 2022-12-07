@@ -95,7 +95,7 @@ const About = () => {
                                 <img
                                     src={skill.icon}
                                     alt=""
-                                    className="h-[40px] mx-auto"
+                                    className="h-[40px] mx-auto transition ease-in-out delay-150 hover:scale-75 duration-300"
                                 />
                                 <p className="text-sm font-medium pt-3">
                                     {skill.name}

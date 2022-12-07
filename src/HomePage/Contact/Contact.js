@@ -7,12 +7,27 @@ import {
     FiFacebook,
 } from "react-icons/fi";
 import { SlSocialBehance } from "react-icons/sl";
+import { MdAlternateEmail } from "react-icons/md";
 import { toast } from "react-toastify";
 
 const Contact = () => {
     const handleMessage = (event) => {
         event.preventDefault();
-        toast.success("Message Send Successfully");
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const comment = form.comment.value;
+
+        const message = {
+            name,
+            email,
+            comment,
+        };
+        console.log(message);
+        if (message) {
+            toast.success("Message Send Successfully");
+            form.reset();
+        }
     };
 
     return (
@@ -42,7 +57,7 @@ const Contact = () => {
                                 +880 1788521836
                             </p>
                             <p className="flex gap-x-2 items-center opacity-70 hover:opacity-100 cursor-pointer my-3">
-                                <FiMessageSquare className="text-lg" />
+                                <MdAlternateEmail className="text-lg" />
                                 bakimd77@gmail.com
                             </p>
                             <div className="flex gap-6 text-lg pt-2">
@@ -79,7 +94,7 @@ const Contact = () => {
                     </div>
 
                     <form
-                        onClick={handleMessage}
+                        onSubmit={handleMessage}
                         className="grid grid-cols-2 gap-x-16 gap-y-10"
                     >
                         <div className="form-control w-full">
@@ -87,8 +102,10 @@ const Contact = () => {
                                 Your Name
                             </label>
                             <input
+                                name="name"
                                 type="text"
                                 placeholder="Enter your name"
+                                required
                                 className="input input-bordered border-transparent rounded-none border-b-[#fff] w-full text-xs font-medium text-accent"
                             />
                         </div>
@@ -97,8 +114,10 @@ const Contact = () => {
                                 Your Email
                             </label>
                             <input
-                                type="text"
+                                name="email"
+                                type="email"
                                 placeholder="Enter your email address"
+                                required
                                 className="input input-bordered border-transparent rounded-none border-b-[#fff] w-full text-xs font-medium text-accent"
                             />
                         </div>
@@ -107,12 +126,14 @@ const Contact = () => {
                                 Your Message
                             </label>
                             <textarea
+                                name="comment"
                                 className="textarea textarea-bordered border-transparent rounded-none border-b-[#fff] w-full text-xs font-medium text-accent"
-                                placeholder="Hi, I think I need you to work on this particular product. Reach out as soon as you can
+                                defaultValue="Hi, I think I need you to work on this particular product. Reach out as soon as you can.
                             "
                             ></textarea>
                             <input
                                 type="submit"
+                                value="Drop Message"
                                 className="col-span-2 mt-10 w-1/2 mx-auto btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize"
                             />
                         </div>

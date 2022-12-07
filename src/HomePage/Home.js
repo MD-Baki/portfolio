@@ -8,10 +8,8 @@ import Project from "./Project/Project";
 const Home = () => {
     return (
         <>
-            <div className="max-w-[1400px] mx-auto px-5 xl:px-0">
-                <Intro />
-            </div>
             <div className="max-w-[1100px] mx-auto px-5 xl:px-0">
+                <Intro />
                 <About />
                 <Works />
                 <Project />
