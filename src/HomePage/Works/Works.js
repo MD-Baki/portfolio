@@ -1,42 +1,46 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import "./Works.css";
-import work1 from "../../Assets/work-1.jpg";
-import work2 from "../../Assets/work-2.jpg";
 
 const Works = () => {
     const projects = [
         {
             _id: 1,
-            image: work1,
+            image: "https://i.ibb.co/rQWN5j9/work-1.jpg",
             aos: "fade-right",
             title: "Creative Photo",
-            intro: "photographer services review photographer services review photographer services review photographer services review",
+            intro: "This is a photographer review and service website. Here the user can give his valuable comments and edit them if he wants. If desired, the user can also take the service of the photographer.",
             technology: [
                 "ReactJS",
                 "TailwindCSS",
-                "Firebase",
+                "React Router",
                 "MongoDB",
                 "ExpressJS",
+                "JWT Token",
+                "Firebase Authentication",
             ],
-            git: "https://www.facebook.com/messages/t/100007616027360",
-            live: "https://www.facebook.com/messages/t/100007616027360",
+            git: "https://github.com/MD-Baki/creative-photo",
+            live: "https://assignment-11-73c46.web.app/",
         },
         {
             _id: 2,
-            image: work2,
+            image: "https://i.ibb.co/kGDgYWT/work-2.jpg",
             aos: "fade-left",
             title: "Dream Phone",
-            intro: "photographer services review photographer services review photographer services review photographer services review",
+            intro: "Here you can create an account and sell your used phone at a good price and buy it if you want. Your data is protected. So that no one can come and steal your data.",
             technology: [
                 "ReactJS",
-                "TailwindCSS",
-                "Firebase",
+                "React Hook Form",
+                "React Query",
+                "React Router",
                 "MongoDB",
+                "TailwindCSS",
                 "ExpressJS",
+                "JWT Token",
+                "Firebase",
             ],
-            git: "https://www.facebook.com/messages/t/100007616027360",
-            live: "https://www.facebook.com/messages/t/100007616027360",
+            git: "https://github.com/MD-Baki/dream-phone",
+            live: "https://dream-phones.web.app/",
         },
     ];
 
@@ -67,14 +71,14 @@ const Works = () => {
                                     <div className="flex gap-4 items-center text-primary text-xl">
                                         <a
                                             href={project.git}
-                                            target="blank"
+                                            target="_blank"
                                             className="hover:text-primary"
                                         >
                                             <FiGithub />
                                         </a>
                                         <a
                                             href={project.live}
-                                            target="blank"
+                                            target="_blank"
                                             className="hover:text-primary"
                                         >
                                             <FiExternalLink />
@@ -82,7 +86,7 @@ const Works = () => {
                                     </div>
                                 </div>
                                 <h5 className="py-2">
-                                    {project.intro.slice(0, 70) + "..."}
+                                    {project.intro.slice(0, 90) + "..."}
                                 </h5>
                                 <div className="hidden md:flex flex-wrap gap-2 mb-2 mt-1">
                                     {project.technology.map((data, i) => (

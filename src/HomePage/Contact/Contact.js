@@ -35,7 +35,7 @@ const Contact = () => {
                     Get in Touch
                 </h2>
                 <div className="grid lg:grid-cols-2 gap-8">
-                    <div data-aos="fade-down" data-aos-duration="1500">
+                    <div data-aos="fade-up" data-aos-duration="1500">
                         <p className="text-accent pb-8">
                             I’m interested in freelance opportunities –
                             especially ambitious or large projects. However, if
@@ -46,38 +46,44 @@ const Contact = () => {
                             SAY HELLO
                         </p>
                         <div className="text-primary inline-block">
-                            <p className="flex gap-x-2 items-center opacity-70 hover:opacity-100 cursor-pointer">
+                            <a
+                                href="tel:+8801788521836"
+                                className="flex gap-x-2 items-center opacity-70 hover:opacity-100 cursor-pointer"
+                            >
                                 <FiPhone className="text-lg" />
                                 +880 1788521836
-                            </p>
-                            <p className="flex gap-x-2 items-center opacity-70 hover:opacity-100 cursor-pointer my-3">
+                            </a>
+                            <a
+                                className="flex gap-x-2 items-center opacity-70 hover:opacity-100 cursor-pointer my-3"
+                                href="mailto: bakimd77@gmail.com"
+                            >
                                 <MdAlternateEmail className="text-lg" />
                                 bakimd77@gmail.com
-                            </p>
+                            </a>
                             <div className="flex gap-6 text-lg pt-2">
                                 <a
-                                    target="blank"
+                                    target="_blank"
                                     href="https://github.com/MD-Baki"
                                     className="transition ease-in-out delay-150 hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-300 border border-primary rounded p-2"
                                 >
                                     <FiGithub />
                                 </a>
                                 <a
-                                    target="blank"
+                                    target="_blank"
                                     href="https://www.linkedin.com/in/md-baki/"
                                     className="transition ease-in-out delay-150 hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-300 border border-primary rounded p-2"
                                 >
                                     <FiLinkedin />
                                 </a>
                                 <a
-                                    target="blank"
+                                    target="_blank"
                                     href="https://www.behance.net/mdbaki1"
                                     className="transition ease-in-out delay-150 hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-300 border border-primary rounded p-2"
                                 >
                                     <SlSocialBehance />
                                 </a>
                                 <a
-                                    target="blank"
+                                    target="_blank"
                                     href="https://www.facebook.com/profile.php?id=100007616027360"
                                     className="transition ease-in-out delay-150 hover:scale-110 hover:bg-primary hover:bg-opacity-10 duration-300 border border-primary rounded p-2"
                                 >

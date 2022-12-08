@@ -61,10 +61,10 @@ const About = () => {
                 About Me
             </h4>
             <div className="flex flex-col lg:flex-row-reverse gap-8 mt-8 justify-between">
-                <div className="lg:w-[35%] text-center lg:text-right pb-7">
+                <div className="w-full lg:w-[35%] text-center lg:text-right pb-7">
                     <div
                         data-aos="zoom-in"
-                        data-aos-duration="1500"
+                        data-aos-duration="1000"
                         className="about-img inline-block"
                     >
                         <img
@@ -76,9 +76,10 @@ const About = () => {
                     </div>
                 </div>
                 <div
-                    data-aos="zoom-out-right"
+                    data-aos="fade-left"
+                    data-aos-easing="ease-in-sine"
                     data-aos-duration="1500"
-                    className="lg:w-[65%] tracking-wide text-accent grid gap-5 text-center lg:text-left"
+                    className="w-full lg:w-[65%] tracking-wide text-accent grid gap-5 text-center lg:text-left"
                 >
                     <p>
                         Hello! My name is MD Abdulla Hale Baki and I enjoy

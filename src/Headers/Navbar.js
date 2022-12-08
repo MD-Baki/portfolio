@@ -50,7 +50,7 @@ const Navbar = () => {
                     </ul>
 
                     <a
-                        target="blank"
+                        target="_blank"
                         href="https://github.com/MD-Baki"
                         className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize ml-3 gap-2 tracking-wide"
                     >

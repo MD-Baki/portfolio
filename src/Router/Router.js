@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import NotFound from "../components/NotFound/NotFound";
 import Home from "../HomePage/Home";
 import Main from "../Layout/Main";
 
@@ -12,5 +13,9 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
         ],
+    },
+    {
+        path: "*",
+        element: <NotFound />,
     },
 ]);
