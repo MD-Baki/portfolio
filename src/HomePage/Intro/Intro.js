@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
+import resumeFile from "../../Assets/My-resume.pdf";
 import { SlSocialBehance } from "react-icons/sl";
 
 const Intro = () => {
@@ -28,13 +29,23 @@ const Intro = () => {
                         dedication.
                     </p>
 
-                    <a
-                        target="_blank"
-                        href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
-                        className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0"
-                    >
-                        Check out my Resume!
-                    </a>
+                    <div className="flex flex-col md:flex-row gap-2 w-fit mx-auto md:mx-0">
+                        <a
+                            target="_blank"
+                            href="https://drive.google.com/file/d/1ONWe1mI2q6VAC9N2HK4lKWcANqoKDF4f/view?usp=sharing"
+                            className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0"
+                        >
+                            Check out my Resume!
+                        </a>
+                        <a
+                            href={resumeFile}
+                            attributes-list
+                            download={resumeFile}
+                            className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0"
+                        >
+                            Download Resume
+                        </a>
+                    </div>
                 </div>
             </div>
             <div className="absolute top-1/2 right-0 -translate-y-1/2 lg:pr-5 xl:pr-0">
