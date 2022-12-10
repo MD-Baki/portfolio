@@ -65,9 +65,13 @@ const Works = () => {
                             />
                             <div className="overlay py-3 px-5 bg-neutral border-t border-primary border-opacity-20">
                                 <div className="flex justify-between">
-                                    <h2 className="text-xl font-medium text-secondary">
+                                    <a
+                                        href={project.live}
+                                        target="_blank"
+                                        className="text-xl font-medium text-secondary hover:text-primary"
+                                    >
                                         {project.title}
-                                    </h2>
+                                    </a>
                                     <div className="flex gap-4 items-center text-primary text-xl">
                                         <a
                                             href={project.git}

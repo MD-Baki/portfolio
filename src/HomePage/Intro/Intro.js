@@ -5,7 +5,7 @@ import { SlSocialBehance } from "react-icons/sl";
 
 const Intro = () => {
     return (
-        <div className="relative">
+        <div className="md:relative">
             <div className="py-20  md:py-48 text-center md:text-left">
                 <div
                     data-aos="fade-right"
@@ -39,7 +39,6 @@ const Intro = () => {
                         </a>
                         <a
                             href={resumeFile}
-                            attributes-list
                             download={resumeFile}
                             className="btn btn-primary text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize px-8 mt-2 md:pt-0"
                         >
@@ -48,7 +47,7 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute top-1/2 right-0 -translate-y-1/2 lg:pr-5 xl:pr-0">
+            <div className="md:absolute top-1/2 right-0 -translate-y-1/2 lg:pr-5 xl:pr-0">
                 <div className="hidden md:flex flex-col gap-6 text-xl">
                     <a
                         target="_blank"

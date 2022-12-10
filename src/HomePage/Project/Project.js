@@ -92,7 +92,7 @@ const Project = () => {
                                 <a
                                     href={project.live}
                                     target="_blank"
-                                    className="text-xl font-bold text-secondary"
+                                    className="text-xl font-bold text-secondary hover:text-primary"
                                 >
                                     {project.title}
                                 </a>

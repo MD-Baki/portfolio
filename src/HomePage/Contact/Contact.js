@@ -1,27 +1,49 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FiPhone, FiGithub, FiLinkedin, FiFacebook } from "react-icons/fi";
 import { SlSocialBehance } from "react-icons/sl";
 import { MdAlternateEmail } from "react-icons/md";
 import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-    const handleMessage = (event) => {
-        event.preventDefault();
-        const form = event.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const comment = form.comment.value;
+    const form = useRef();
 
-        const message = {
-            name,
-            email,
-            comment,
-        };
-        console.log(message);
-        if (message) {
-            toast.success("Message Send Successfully");
-            form.reset();
-        }
+    const sendEmail = (event) => {
+        event.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_ped11tl",
+                "template_sd6mb93",
+                form.current,
+                "FWPFCohKtJ489eyyE"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    toast.success("Message Send Successfully");
+                    event.target.reset();
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+
+        // const form = event.target;
+        // const user_name = form.user_name.value;
+        // const user_email = form.user_email.value;
+        // const message = form.message.value;
+
+        // const sendMessage = {
+        //     user_name,
+        //     user_email,
+        //     message,
+        // };
+        // console.log(sendMessage);
+        // if (message) {
+        //     toast.success("Message Send Successfully");
+        //     form.reset();
+        // }
     };
 
     return (
@@ -94,7 +116,8 @@ const Contact = () => {
                     </div>
 
                     <form
-                        onSubmit={handleMessage}
+                        ref={form}
+                        onSubmit={sendEmail}
                         data-aos="fade-up"
                         data-aos-duration="1500"
                         className="grid grid-cols-2 gap-x-16 gap-y-10"
@@ -104,7 +127,7 @@ const Contact = () => {
                                 Your Name
                             </label>
                             <input
-                                name="name"
+                                name="user_name"
                                 type="text"
                                 placeholder="Enter your name"
                                 required
@@ -116,7 +139,7 @@ const Contact = () => {
                                 Your Email
                             </label>
                             <input
-                                name="email"
+                                name="user_email"
                                 type="email"
                                 placeholder="Enter your email address"
                                 required
@@ -128,7 +151,7 @@ const Contact = () => {
                                 Message
                             </label>
                             <textarea
-                                name="comment"
+                                name="message"
                                 className="textarea textarea-bordered border-transparent rounded-none border-b-[#fff] w-full text-xs font-medium text-accent"
                                 defaultValue="Hi, I think I need you to work on this particular product. Reach out as soon as you can.
                             "
