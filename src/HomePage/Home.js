@@ -8,7 +8,7 @@ import Project from "./Project/Project";
 const Home = () => {
     return (
         <>
-            <div className="max-w-[1100px] mx-auto px-5 xl:px-0">
+            <div className="max-w-[1100px] mx-auto px-5 xl:px-0 overflow-y-hidden lg:overflow-y-visible">
                 <Intro />
                 <About />
                 <Works />

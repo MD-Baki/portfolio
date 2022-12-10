@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import "./Project.css";
 
 const Project = () => {
@@ -115,7 +116,10 @@ const Project = () => {
                             </div>
                             <div>
                                 <p className="text-accent text-sm pb-3">
-                                    {project.details.slice(0, 100) + "..."}
+                                    {project.details.slice(0, 100) + "..."}{" "}
+                                    <Link className="text-[#acc2f1] font-bold hover:link hover:text-primary">
+                                        Read More
+                                    </Link>
                                 </p>
                                 <div className="flex flex-wrap gap-4">
                                     {project.technology.map((data, i) => (

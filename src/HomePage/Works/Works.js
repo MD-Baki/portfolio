@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { Link } from "react-router-dom";
 import "./Works.css";
 
 const Works = () => {
@@ -90,7 +91,10 @@ const Works = () => {
                                     </div>
                                 </div>
                                 <h5 className="py-2">
-                                    {project.intro.slice(0, 90) + "..."}
+                                    {project.intro.slice(0, 90) + "..."}{" "}
+                                    <Link className="text-sm font-bold text-secondary hover:link hover:text-primary">
+                                        Read More
+                                    </Link>
                                 </h5>
                                 <div className="hidden md:flex flex-wrap gap-2 mb-2 mt-1">
                                     {project.technology.map((data, i) => (
