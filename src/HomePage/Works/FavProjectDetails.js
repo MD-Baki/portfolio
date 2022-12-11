@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import NotFound from "../../components/NotFound/NotFound";
-import { works } from "./data";
-import { FiGithub, FiCornerDownLeft } from "react-icons/fi";
+import { projects } from "../../components/favProject";
 import Loader from "../../components/Loader/Loader";
-import ProjectSlider from "./ProjectSlider";
+import NotFound from "../../components/NotFound/NotFound";
+import { FiGithub, FiCornerDownLeft } from "react-icons/fi";
+import ProjectSlider from "../ProjectDetails/ProjectSlider";
 
-const ProjectDetails = () => {
+const FavProjectDetails = () => {
     const [loading, setLoading] = useState(true);
 
     const { id } = useParams();
 
-    const single = works?.find((Project) => Project.id === parseInt(id));
-    const { title, details, technology, git, live, mocUp1, mocUp2 } = single;
+    const single = projects?.find((Project) => Project.id === parseInt(id));
+    const { title, mocUp1, mocUp2, intro, technology, git, live } = single;
 
     useEffect(() => {
         setTimeout(() => {
@@ -29,10 +29,10 @@ const ProjectDetails = () => {
     return (
         <div className="max-w-[1100px] h-screen mx-auto py-20">
             <div
+                className=" px-5 xl:px-0"
                 data-aos="fade-up"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1500"
-                className=" px-5 xl:px-0"
             >
                 <div className="mb-8">
                     <Link
@@ -51,7 +51,7 @@ const ProjectDetails = () => {
                         <h2 className="text-secondary font-bold uppercase text-xl">
                             {title}
                         </h2>
-                        <p className="text-accent py-8">{details}</p>
+                        <p className="text-accent py-8">{intro}</p>
                         <div className="flex flex-wrap gap-4">
                             {technology.map((data, i) => (
                                 <p key={i} className="text-xs font-medium">
@@ -84,4 +84,4 @@ const ProjectDetails = () => {
     );
 };
 
-export default ProjectDetails;
+export default FavProjectDetails;

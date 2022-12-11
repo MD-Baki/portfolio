@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import NotFound from "../components/NotFound/NotFound";
 import Home from "../HomePage/Home";
 import ProjectDetails from "../HomePage/ProjectDetails/ProjectDetails";
+import FavProjectDetails from "../HomePage/Works/FavProjectDetails";
 import Main from "../Layout/Main";
 
 export const router = createBrowserRouter([
@@ -18,7 +19,10 @@ export const router = createBrowserRouter([
     {
         path: "/projectDetails/:id",
         element: <ProjectDetails />,
-        loader: () => fetch("allWorks.json"),
+    },
+    {
+        path: "/favProjectDetails/:id",
+        element: <FavProjectDetails />,
     },
     {
         path: "*",

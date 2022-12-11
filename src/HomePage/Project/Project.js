@@ -1,80 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Project.css";
+import { works } from "../ProjectDetails/data";
 
 const Project = () => {
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        fetch("allWorks.json")
-            .then((res) => res.json())
-            .then((data) => setProjects(data));
-    }, []);
-
-    // const projects = [
-    //     {
-    //         _id: 1,
-    //         image: "https://i.ibb.co/nD5S92f/quiz-panther.jpg",
-    //         title: "Quiz Panther",
-    //         details:
-    //             "This is a quiz-related website. There are questions in various sections to improve programming skills, from which the user can test his intelligence by answering the questions as per his wish.",
-    //         technology: ["ReactJS", "React Router", "Rechart", "TailwindCSS"],
-    //         git: "https://github.com/MD-Baki/quiz-panther",
-    //         live: "https://quiz-panther-me.netlify.app/",
-    //     },
-    //     {
-    //         _id: 2,
-    //         image: "https://i.ibb.co/VwzsZJ1/tec-world.jpg",
-    //         title: "Technology world",
-    //         details:
-    //             "This is an online learning website. From here you can take various courses to develop your skills at a very affordable price.",
-    //         technology: ["ReactJS", "React Router", "TailwindCSS", "Firebase"],
-    //         git: "https://github.com/MD-Baki/technology-world",
-    //         live: "https://technology-world-f2d99.web.app/",
-    //     },
-    //     {
-    //         _id: 3,
-    //         image: "https://i.ibb.co/PDwP1Lg/best5.jpg",
-    //         title: "Build A Team",
-    //         details:
-    //             "Here you can create a team of your choice and determine their price and calculate how much it costs you.",
-    //         technology: ["JavaScript ES-6", "HTML", "TailwindCSS"],
-    //         git: "https://github.com/MD-Baki/best-five",
-    //         live: "https://build-a-team-of-your-choice.netlify.app/",
-    //     },
-    //     {
-    //         _id: 4,
-    //         image: "https://i.ibb.co/VSsywKZ/news.jpg",
-    //         title: "News Wall",
-    //         details:
-    //             "Here you can see international news. News has been categorized and arranged to keep in mind the convenience of the user. You can see the news in details form by clicking on the details button.",
-    //         technology: ["JavaScript ES-6", "HTML", "TailwindCSS"],
-    //         git: "https://github.com/MD-Baki/news-portal",
-    //         live: "https://news-wall.netlify.app/",
-    //     },
-    //     {
-    //         _id: 5,
-    //         image: "https://i.ibb.co/rQsPdgt/edu.jpg",
-    //         title: "Exultance",
-    //         details:
-    //             "This is a company portfolio website. Here are the services they offer and the work they do. Their group meeting was shown. Also, customer reviews are shown and sister companies are shown.",
-    //         technology: ["HTML", "CSS", "Bootstrap", "JQuery", "Silk"],
-    //         git: "https://github.com/MD-Baki/exultance",
-    //         live: "https://md-baki.github.io/exultance/",
-    //     },
-    //     {
-    //         _id: 6,
-    //         image: "https://i.ibb.co/QDR2M3V/sahajjo.jpg",
-    //         title: "Sahajjo",
-    //         details:
-    //             "This is a simple website for poor and needy people. Here their work is published in blog form. If you want to keep up with their activities, you can contact them and donate.",
-    //         technology: ["HTML", "CSS", "Bootstrap", "JQuery", "Silk"],
-    //         git: "https://github.com/MD-Baki/sahajjo",
-    //         live: "https://md-baki.github.io/sahajjo/helps/home.html",
-    //     },
-    // ];
-
     return (
         <div id="work" className="py-20">
             <div className="text-center">
@@ -86,7 +16,7 @@ const Project = () => {
                 </h4>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 pt-14">
-                {projects.map((project) => (
+                {works.map((project) => (
                     <div
                         data-aos="fade-up"
                         data-aos-anchor-placement="top-bottom"

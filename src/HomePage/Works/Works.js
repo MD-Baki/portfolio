@@ -2,49 +2,9 @@ import React from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Works.css";
+import { projects } from "../../components/favProject";
 
 const Works = () => {
-    const projects = [
-        {
-            _id: 1,
-            image: "https://i.ibb.co/rQWN5j9/work-1.jpg",
-            aos: "fade-right",
-            title: "Creative Photo",
-            intro: "This is a photographer review and service website. Here the user can give his valuable comments and edit them if he wants. If desired, the user can also take the service of the photographer.",
-            technology: [
-                "ReactJS",
-                "TailwindCSS",
-                "React Router",
-                "MongoDB",
-                "ExpressJS",
-                "JWT Token",
-                "Firebase Authentication",
-            ],
-            git: "https://github.com/MD-Baki/creative-photo",
-            live: "https://assignment-11-73c46.web.app/",
-        },
-        {
-            _id: 2,
-            image: "https://i.ibb.co/kGDgYWT/work-2.jpg",
-            aos: "fade-left",
-            title: "Dream Phone",
-            intro: "Here you can create an account and sell your used phone at a good price and buy it if you want. Your data is protected. So that no one can come and steal your data.",
-            technology: [
-                "ReactJS",
-                "React Hook Form",
-                "React Query",
-                "React Router",
-                "MongoDB",
-                "TailwindCSS",
-                "ExpressJS",
-                "JWT Token",
-                "Firebase",
-            ],
-            git: "https://github.com/MD-Baki/dream-phone",
-            live: "https://dream-phones.web.app/",
-        },
-    ];
-
     return (
         <div id="project" className="py-20">
             <h4 className="text-secondary text-2xl font-medium flex gap-4 after:content-[''] after:md:w-[300px] after:w-[40%] after:h-[2px] after:bg-primary items-center">
@@ -92,7 +52,10 @@ const Works = () => {
                                 </div>
                                 <h5 className="py-2">
                                     {project.intro.slice(0, 90) + "..."}{" "}
-                                    <Link className="text-sm font-bold text-secondary hover:link hover:text-primary">
+                                    <Link
+                                        to={`/favProjectDetails/${project.id}`}
+                                        className="text-sm font-bold text-secondary hover:link hover:text-primary"
+                                    >
                                         Read More
                                     </Link>
                                 </h5>
