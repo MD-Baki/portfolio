@@ -21,11 +21,11 @@ const projectSlider = ({ mocUp1, mocUp2 }) => {
     return (
         <div>
             <Slider {...settings}>
-                <div className="rounded-2xl overflow-hidden">
-                    <img src={mocUp1} alt="" className="w-full" />
+                <div className="">
+                    <img src={mocUp1} alt="" className="rounded-2xl w-full" />
                 </div>
                 <div className="rounded-2xl overflow-hidden">
-                    <img src={mocUp2} alt="" className="w-full" />
+                    <img src={mocUp2} alt="" className="rounded-2xl w-full" />
                 </div>
             </Slider>
         </div>

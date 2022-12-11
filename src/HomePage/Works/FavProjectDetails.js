@@ -42,9 +42,8 @@ const FavProjectDetails = () => {
                         <FiCornerDownLeft /> back to home
                     </Link>
                 </div>
-                <div className="bg-gradient-to-t from-neutral to-[#000a1f] p-20 rounded-3xl border border-neutral border-opacity-90 grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        {/* <img src={image} alt="" className="w-full" /> */}
+                <div className="bg-gradient-to-t from-neutral to-[#000a1f] p-10 lg:p-20 rounded-3xl border border-neutral border-opacity-90 grid md:grid-cols-2 gap-12 items-center">
+                    <div className="w-[250px] md:w-[400px] lg:full mx-auto">
                         <ProjectSlider mocUp1={mocUp1} mocUp2={mocUp2} />
                     </div>
                     <div className="">
