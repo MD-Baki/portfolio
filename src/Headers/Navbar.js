@@ -40,6 +40,14 @@ const Navbar = () => {
                             </a>
                         </li>
                         <li>
+                            <Link
+                                to="/blog"
+                                className="text-secondary hover:text-primary text-sm flex gap-1 items-center"
+                            >
+                                Blog
+                            </Link>
+                        </li>
+                        <li>
                             <a
                                 href="#contact"
                                 className="text-secondary hover:text-primary text-sm flex gap-1 items-center"

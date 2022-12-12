@@ -16,7 +16,7 @@ const Works = () => {
                     <div
                         data-aos={project.aos}
                         data-aos-duration="1500"
-                        key={project._id}
+                        key={project.id}
                     >
                         <div className="project-container border border-accent rounded-md hover:border-primary overflow-hidden">
                             <img

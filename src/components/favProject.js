@@ -5,6 +5,11 @@ export const projects = [
         aos: "fade-right",
         title: "Creative Photo",
         intro: "This is a photographer review and service website. Here the user can give his valuable comments and edit them if he wants. If desired, the user can also take the service of the photographer.",
+        point: [
+            "Here a photographer can add all his services and show his user reviews.",
+            "Users can provide valuable comments here and delete or edit them if they want.",
+            "Authentication is used to add users and jwt tokens are used to secure their data.",
+        ],
         technology: [
             "ReactJS",
             "TailwindCSS",
@@ -25,6 +30,11 @@ export const projects = [
         aos: "fade-left",
         title: "Dream Phone",
         intro: "Here you can create an account and sell your used phone at a good price and buy it if you want. Your data is protected. So that no one can come and steal your data.",
+        point: [
+            "The customer can buy the phone of his choice very easily and go to the pickup location to pick up his product.",
+            "The seller can sell his products at a reasonable price and if the seller is verified, the verified symbol will appear next to his name.",
+            "To keep all the information of buyers and sellers secure, it is tracked through the admin panel.",
+        ],
         technology: [
             "ReactJS",
             "React Hook Form",

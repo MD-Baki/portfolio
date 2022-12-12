@@ -12,7 +12,8 @@ const ProjectDetails = () => {
     const { id } = useParams();
 
     const single = works?.find((Project) => Project.id === parseInt(id));
-    const { title, details, technology, git, live, mocUp1, mocUp2 } = single;
+    const { title, details, technology, git, live, mocUp1, mocUp2, point } =
+        single;
 
     useEffect(() => {
         setTimeout(() => {
@@ -42,8 +43,8 @@ const ProjectDetails = () => {
                         <FiCornerDownLeft /> back to home
                     </Link>
                 </div>
-                <div className="bg-gradient-to-t from-neutral to-[#000a1f] p-10 lg:p-20 rounded-3xl border border-neutral border-opacity-90 grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="w-[250px] md:w-[400px] lg:full mx-auto">
+                <div className="bg-gradient-to-t from-neutral to-[#000a1f] p-10 lg:p-20 rounded-3xl border border-neutral border-opacity-90 grid gap-12 items-center">
+                    <div className="w-[250px] md:w-[400px] lg:w-[700px] mx-auto">
                         <ProjectSlider mocUp1={mocUp1} mocUp2={mocUp2} />
                     </div>
                     <div className="">
@@ -51,6 +52,19 @@ const ProjectDetails = () => {
                             {title}
                         </h2>
                         <p className="text-accent py-8">{details}</p>
+                        <div className="pb-6">
+                            <p className="text-secondary text-lg font-bold pb-4">
+                                Features:
+                            </p>
+                            {point.map((data, i) => (
+                                <li key={i} className="pb-2 text-accent">
+                                    {data}
+                                </li>
+                            ))}
+                        </div>
+                        <p className="text-secondary text-lg font-bold pb-4">
+                            Technology:
+                        </p>
                         <div className="flex flex-wrap gap-4">
                             {technology.map((data, i) => (
                                 <p key={i} className="text-xs font-medium">
