@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { projects } from "../../components/favProject";
 import Loader from "../../components/Loader/Loader";
 import NotFound from "../../components/NotFound/NotFound";
-import { FiGithub, FiCornerDownLeft } from "react-icons/fi";
+import { FiGithub, FiCornerDownLeft, FiExternalLink } from "react-icons/fi";
 import ProjectSlider from "../ProjectDetails/ProjectSlider";
 
 const FavProjectDetails = () => {
@@ -72,7 +72,7 @@ const FavProjectDetails = () => {
                                 href={live}
                                 className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize gap-2 tracking-wide"
                             >
-                                <FiGithub />
+                                <FiExternalLink />
                                 Live
                             </a>
                         </div>

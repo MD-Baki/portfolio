@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import NotFound from "../../components/NotFound/NotFound";
 import { works } from "./data";
-import { FiGithub, FiCornerDownLeft } from "react-icons/fi";
+import { FiGithub, FiCornerDownLeft, FiExternalLink } from "react-icons/fi";
 import Loader from "../../components/Loader/Loader";
 import ProjectSlider from "./ProjectSlider";
 
@@ -72,7 +72,7 @@ const ProjectDetails = () => {
                                 href={live}
                                 className="btn btn-primary btn-sm text-sm rounded bg-transparent hover:bg-opacity-10 text-primary capitalize gap-2 tracking-wide"
                             >
-                                <FiGithub />
+                                <FiExternalLink />
                                 Live
                             </a>
                         </div>

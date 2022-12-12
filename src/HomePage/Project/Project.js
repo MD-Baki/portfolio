@@ -28,13 +28,12 @@ const Project = () => {
                                 <img src={project.image} alt="" />
                             </div>
                             <div className="my-7 flex justify-between items-center">
-                                <a
-                                    href={project.live}
-                                    target="_blank"
+                                <Link
+                                    to={`/projectDetails/${project.id}`}
                                     className="text-xl font-bold text-secondary hover:text-primary"
                                 >
                                     {project.title}
-                                </a>
+                                </Link>
                                 <div className="flex gap-4 items-center text-xl">
                                     <a
                                         href={project.git}

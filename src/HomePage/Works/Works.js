@@ -26,13 +26,12 @@ const Works = () => {
                             />
                             <div className="overlay py-3 px-5 bg-neutral border-t border-primary border-opacity-20">
                                 <div className="flex justify-between">
-                                    <a
-                                        href={project.live}
-                                        target="_blank"
+                                    <Link
+                                        to={`/favProjectDetails/${project.id}`}
                                         className="text-xl font-medium text-secondary hover:text-primary"
                                     >
                                         {project.title}
-                                    </a>
+                                    </Link>
                                     <div className="flex gap-4 items-center text-primary text-xl">
                                         <a
                                             href={project.git}

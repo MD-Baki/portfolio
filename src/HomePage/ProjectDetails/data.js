@@ -20,8 +20,8 @@ export const works = [
         technology: ["ReactJS", "React Router", "TailwindCSS", "Firebase"],
         git: "https://github.com/MD-Baki/technology-world",
         live: "https://technology-world-f2d99.web.app/",
-        mocUp1: "https://i.ibb.co/VwzsZJ1/tec-world.jpg",
-        mocUp2: "https://i.ibb.co/G7zXDyy/previw.jpg",
+        mocUp1: "https://i.ibb.co/B2hLs5P/cource-moc.jpg",
+        mocUp2: "https://i.ibb.co/7QZ3Fh2/cource-moc-1.jpg",
     },
     {
         id: 5,
@@ -32,8 +32,8 @@ export const works = [
         technology: ["HTML", "CSS", "Bootstrap", "JQuery", "Silk"],
         git: "https://github.com/MD-Baki/exultance",
         live: "https://md-baki.github.io/exultance/",
-        mocUp1: "https://i.ibb.co/rQsPdgt/edu.jpg",
-        mocUp2: "https://i.ibb.co/rQsPdgt/edu.jpg",
+        mocUp1: "https://i.ibb.co/hVw7bzm/port-moc.jpg",
+        mocUp2: "https://i.ibb.co/7QkkZRd/port-moc-1.jpg",
     },
     {
         id: 6,
@@ -44,8 +44,8 @@ export const works = [
         technology: ["HTML", "CSS", "Bootstrap", "JQuery", "Silk"],
         git: "https://github.com/MD-Baki/sahajjo",
         live: "https://md-baki.github.io/sahajjo/helps/home.html",
-        mocUp1: "https://i.ibb.co/QDR2M3V/sahajjo.jpg",
-        mocUp2: "https://i.ibb.co/QDR2M3V/sahajjo.jpg",
+        mocUp1: "https://i.ibb.co/yXCFw7d/sahajjo-moc.jpg",
+        mocUp2: "https://i.ibb.co/ZMypD7Y/sahajjo-moc-1.jpg",
     },
     {
         id: 7,
@@ -56,8 +56,8 @@ export const works = [
         technology: ["JavaScript ES-6", "HTML", "TailwindCSS"],
         git: "https://github.com/MD-Baki/best-five",
         live: "https://build-a-team-of-your-choice.netlify.app/",
-        mocUp1: "https://i.ibb.co/PDwP1Lg/best5.jpg",
-        mocUp2: "https://i.ibb.co/PDwP1Lg/best5.jpg",
+        mocUp1: "https://i.ibb.co/2q4PhPN/bestfive-moc.jpg",
+        mocUp2: "https://i.ibb.co/RHRTwS6/bestfive.jpg",
     },
     {
         id: 8,
@@ -68,7 +68,7 @@ export const works = [
         technology: ["JavaScript ES-6", "HTML", "TailwindCSS"],
         git: "https://github.com/MD-Baki/news-portal",
         live: "https://news-wall.netlify.app/",
-        mocUp1: "https://i.ibb.co/VSsywKZ/news.jpg",
-        mocUp2: "https://i.ibb.co/VSsywKZ/news.jpg",
+        mocUp1: "https://i.ibb.co/ZhqPNqr/news-moc.jpg",
+        mocUp2: "https://i.ibb.co/dKfmCxS/news-moc-1.jpg",
     },
 ];
