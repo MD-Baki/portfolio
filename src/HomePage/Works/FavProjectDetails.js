@@ -44,7 +44,7 @@ const FavProjectDetails = () => {
                     </Link>
                 </div>
                 <div className="bg-gradient-to-t from-neutral to-[#000a1f] p-10 lg:p-20 rounded-3xl border border-neutral border-opacity-90 grid  gap-12 items-center">
-                    <div className="w-[250px] md:w-[400px] lg:w-[700px] mx-auto">
+                    <div className="w-[250px] md:w-[600px] lg:w-[820px] mx-auto">
                         <ProjectSlider mocUp1={mocUp1} mocUp2={mocUp2} />
                     </div>
                     <div className="">

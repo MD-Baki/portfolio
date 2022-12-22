@@ -28,22 +28,6 @@ const Contact = () => {
                     console.log(error.text);
                 }
             );
-
-        // const form = event.target;
-        // const user_name = form.user_name.value;
-        // const user_email = form.user_email.value;
-        // const message = form.message.value;
-
-        // const sendMessage = {
-        //     user_name,
-        //     user_email,
-        //     message,
-        // };
-        // console.log(sendMessage);
-        // if (message) {
-        //     toast.success("Message Send Successfully");
-        //     form.reset();
-        // }
     };
 
     return (

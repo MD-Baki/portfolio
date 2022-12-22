@@ -13,7 +13,7 @@ const NotFound = () => {
                             alt=""
                             width="300px"
                         />
-                        <Link to="/" class="btn-go-home" target="_blank">
+                        <Link to="/" class="btn-go-home">
                             GO BACK HOME
                         </Link>
                     </div>
